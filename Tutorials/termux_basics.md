@@ -19,6 +19,6 @@ There's many things to install in Termux, while some of them are in different re
 
 * `pkg install root-repo`: Enable this repository only if your device is rooted. It contains the packages/applications that require root permissions.
 
-* `pkg install tur-repo`: This package repository is unofficial, but it contains various packages/applications that are not in Termux's official packages list.
+* `pkg install tur-repo`: This package repository is unofficial, but it contains various packages/applications that are not in Termux's official packages list. ([Learn more](https://github.com/termux-user-repository/tur))
 
 [[Go back to the navigation]](https://github.com/GlitchBlake/Termux-Tutorials/blob/main/README.md)
