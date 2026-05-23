@@ -1,4 +1,4 @@
-# Basic Things To Do in Termux
+# Getting Started with Termux
 
 ## Update Packages
 It is recommended to update the packages to keep Termux up-to-date. To update the packages you can run this simple command:
