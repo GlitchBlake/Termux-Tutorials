@@ -11,4 +11,7 @@ To install a native XFCE4 desktop on your Termux, follow these steps:
 
 ### X11
 1. Before proceeding everything below, install [Termux:X11 application](https://github.com/termux/termux-x11)
-2. Install the essential packages: `pkg install pulseaudio termux-x11-nightly dbus`
+2. Install the essential packages: `pkg install pulseaudio termux-x11-nightly`
+3. Start the PulseAudio server:
+```pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1```
+5. 
