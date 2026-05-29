@@ -34,3 +34,22 @@ export DISPLAY=:0
 ```
 termux-x11 -xstartup startxfce4
 ```
+
+### VNC
+1. Install a VNC application to your phone before proceeding.
+2. Install the essential packages
+```
+pkg install tigervnc dbus
+```
+3. Set up the VNC password
+```
+vncpasswd
+```
+4. Create/edit the VNC startup script
+```
+nano ~/.vnc/xstartup
+```
+5. Paste the following in it:
+```
+dbus-launch --exit-with-session startxfce4
+```
