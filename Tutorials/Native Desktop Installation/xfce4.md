@@ -25,4 +25,12 @@ pkg install pulseaudio termux-x11-nightly
 ```
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 ```
-5. 
+4. Set the required environment variables
+```
+export PULSE_SERVER=127.0.0.1
+export DISPLAY=:0
+```
+5. Start the X11 server along with the XFCE4 desktop
+```
+termux-x11 -xstartup startxfce4
+```
