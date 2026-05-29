@@ -14,5 +14,3 @@
 
 ## Method 3: Google Play Store
 Although it is NOT recommended to install Termux from Google Play Store, you can install it from [here](https://play.google.com/store/apps/details?id=com.termux).
-
-[[Go back to the navigation]](https://github.com/GlitchBlake/Termux-Tutorials/blob/main/README.md)
