@@ -29,10 +29,11 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 ```
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
+export XDG_RUNTIME_DIR=$TMPDIR
 ```
 5. Start the X11 server along with the XFCE4 desktop
 ```
-termux-x11 -xstartup startxfce4
+termux-x11 -xstartup xfce4-session
 ```
 
 ### VNC
