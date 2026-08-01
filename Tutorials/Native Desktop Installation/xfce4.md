@@ -35,6 +35,7 @@ export XDG_RUNTIME_DIR=$TMPDIR
 ```
 termux-x11 -xstartup xfce4-session
 ```
+Now check your Termux:X11 to see your desktop!
 
 ### VNC
 1. Install a VNC application to your phone before proceeding.
@@ -52,5 +53,10 @@ nano ~/.vnc/xstartup
 ```
 5. Paste the following in it:
 ```
-dbus-launch --exit-with-session startxfce4
+dbus-launch --exit-with-session xfce4-session
 ```
+6. Start the VNC server
+```
+vncserver
+```
+Finally, check your VNC viewer application and enjoy your desktop!
