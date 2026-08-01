@@ -35,7 +35,7 @@ export XDG_RUNTIME_DIR=$TMPDIR
 ```
 termux-x11 -xstartup xfce4-session
 ```
-Now check your Termux:X11 to see your desktop!
+Now check Termux:X11 application to see your desktop!
 
 ### VNC
 1. Install a VNC application to your phone before proceeding.
