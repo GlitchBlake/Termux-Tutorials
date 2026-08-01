@@ -1,4 +1,8 @@
 # Termux Desktop Installation Guide - KDE Plasma
+> [!WARNING]
+> KDE Plasma might be heavy for low-end devices. It is recommended to have a device with good hardware and hardware acceleration.
+
+
 To install a native KDE Plasma desktop on your Termux, follow these steps:
 
 ## Package Installation
