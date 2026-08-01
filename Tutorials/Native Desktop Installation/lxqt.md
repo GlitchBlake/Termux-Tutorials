@@ -17,3 +17,46 @@ pkg install lxqt
 
 ### X11
 1. Before proceeding everything below, install [Termux:X11 application](https://github.com/termux/termux-x11)
+2. Install the essential packages
+```
+pkg install pulseaudio termux-x11-nightly
+```
+3. Start the PulseAudio server
+```
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+```
+4. Set the required environment variables
+```
+export PULSE_SERVER=127.0.0.1
+export DISPLAY=:0
+export XDG_RUNTIME_DIR=$TMPDIR
+```
+5. Start the X11 server along with the XFCE4 desktop
+```
+termux-x11 -xstartup startlxqt
+```
+Now check Termux:X11 application to see your desktop!
+
+### VNC
+1. Install a VNC application to your phone before proceeding.
+2. Install the essential packages
+```
+pkg install tigervnc dbus
+```
+3. Set up the VNC password
+```
+vncpasswd
+```
+4. Create/edit the VNC startup script
+```
+nano ~/.vnc/xstartup
+```
+5. Paste the following in it:
+```
+dbus-launch --exit-with-session startlxqt
+```
+6. Start the VNC server
+```
+vncserver
+```
+Finally, check your VNC viewer application and enjoy your desktop!
