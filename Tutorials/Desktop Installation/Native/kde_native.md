@@ -64,3 +64,10 @@ dbus-launch --exit-with-session startplasma-x11
 vncserver
 ```
 Finally, check your VNC viewer application and enjoy your desktop!
+
+### Wayland
+> [!IMPORTANT]
+> It is highly recommended to have a device with Qualcomm Snapdragon processor and Qualcomm Adreno driver with hardware acceleration support before proceeding!
+
+> [!NOTE]
+> This section uses [Anland Termux](https://github.com/lfdevs/anland-termux) for Wayland support. Huge credits to LFDevs for the creation of that!
