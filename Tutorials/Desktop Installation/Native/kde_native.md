@@ -73,4 +73,14 @@ Finally, check your VNC viewer application and enjoy your desktop!
 > This section uses [Anland Termux](https://github.com/lfdevs/anland-termux) for Wayland support. Huge credits to LFDevs for the creation of that!
 
 1. Install the Anland Termux application and the required packages (`xwayland`, `layer-shell-qt`, `weston`, `anland`,`kwin-anland`, `mesa` and `mesa-vulkan-icd-freedreno`) from [here](https://github.com/lfdevs/anland-termux/releases/latest)
+2. Install `pipewire` package (for audio support)
+```
+pkg install pipewire
+```
+3. Hold the installed packages by creating a file in `$PREFIX/etc/apt/preferences.d`, pasting the text below and saving the file
+```
+Package: xwayland mesa mesa-vulkan-icd-freedreno weston layer-shell-qt
+Pin: release *
+Pin-Priority: -1
+```
 
