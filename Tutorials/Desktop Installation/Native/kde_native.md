@@ -55,7 +55,7 @@ vncpasswd
 ```
 nano ~/.vnc/xstartup
 ```
-5. Paste the following in it:
+5. Paste the following in it
 ```
 dbus-launch --exit-with-session startplasma-x11
 ```
@@ -71,3 +71,6 @@ Finally, check your VNC viewer application and enjoy your desktop!
 
 > [!NOTE]
 > This section uses [Anland Termux](https://github.com/lfdevs/anland-termux) for Wayland support. Huge credits to LFDevs for the creation of that!
+
+1. Install the Anland Termux application and the required packages (`xwayland`, `layer-shell-qt`, `weston`, `anland`,`kwin-anland`, `mesa` and `mesa-vulkan-icd-freedreno`) from [here](https://github.com/lfdevs/anland-termux/releases/latest)
+
